@@ -1,9 +1,21 @@
-const colors = ['green', 'red' , 'pink', 'gray', 'rebeccapurple', 'yellow', 'orange', 'olive', 'navy', 'blue', 'aqua' , 'linear-gradient(red, orange, yellow)'];
+const colors = 
+[
+    'green', 
+    'red' , 
+    'pink', 
+    'gray', 
+    'rebeccapurple', 
+    'yellow', 
+    'orange', 
+    'olive', 
+    'navy', 
+    'blue', 
+    'aqua' , 
+];
 const btn = document.getElementById('btn');
 const color = document.querySelector('.color');
 
 btn.addEventListener('click', () => {
-    //get random number between 0-3
     const randomNumber = getRandomNumber();
     console.log(randomNumber)
     document.body.style.background = colors[randomNumber];
